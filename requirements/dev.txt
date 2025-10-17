@@ -1,0 +1,28 @@
+# Development dependencies
+-r base.txt
+
+# Testing framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+pytest-mock>=3.11.0
+
+# HTTP mocking for tests
+httpx-mock>=0.10.0
+
+# Code formatting and linting
+black>=23.0.0
+ruff>=0.0.280
+
+# Type checking
+mypy>=1.5.0
+
+# Pre-commit hooks
+pre-commit>=3.3.0
+
+# Development tools
+ipython>=8.14.0
+jupyter>=1.0.0
+
+# Performance profiling
+py-spy>=0.3.14

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+  "source": {
+    "path": "src/vision_server.py",
+    "entrypoint": "mcp"
+  },
+  "environment": {
+    "python": ">=3.10",
+    "requirements": "requirements/prod.txt"
+  },
+  "deployment": {
+    "transport": "stdio",
+    "log_level": "INFO",
+    "env": {
+      "PYTHONPATH": "/app",
+      "LOG_LEVEL": "${LOG_LEVEL:-INFO}",
+      "TRANSPORT": "${TRANSPORT:-stdio}",
+      "Z_AI_API_KEY": "${Z_AI_API_KEY}",
+      "PLATFORM_MODE": "${PLATFORM_MODE:-AUTO}"
+    }
+  }
+}
